@@ -14,7 +14,7 @@ Group:		System/Servers
 BuildRoot:	%{_tmppath}/%{name}-buildroot
 BuildRequires:	python-devel
 Requires:	python-medusa python-cheetah metakit-python
-Requires:	PyXML pyrex python-docutils python-imaging
+Requires:	PyXML python-pyrex python-docutils python-imaging
 Requires:	python-soap >= 0.11.1
 Requires:	libjpeg62 zlib1
 Provides:	PyDS
