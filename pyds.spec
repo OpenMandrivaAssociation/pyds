@@ -1,6 +1,6 @@
 %define name	pyds
 %define version 0.7.3
-%define release %mkrel 3
+%define release %mkrel 4
 
 Name: 	 	%{name}
 Summary: 	Python Desktop Server
@@ -11,13 +11,19 @@ Source:		PyDS-%{version}.tar.bz2
 URL:		http://pyds.muensterland.org/
 License:	BSD
 Group:		System/Servers
-BuildRoot:	%{_tmppath}/%{name}-buildroot
 BuildRequires:	python-devel
-Requires:	python-medusa python-cheetah metakit-python
-Requires:	PyXML python-pyrex python-docutils python-imaging
+Requires:	python-medusa
+Requires:	python-cheetah
+Requires:	python-pyrex
+Requires:	python-docutils
+Requires:	python-imaging
+Requires:	metakit-python
+Requires:	PyXML
 Requires:	python-soap >= 0.11.1
-Requires:	libjpeg62 zlib1
+Requires:	libjpeg62
+Requires:	zlib1
 Provides:	PyDS
+BuildRoot:	%{_tmppath}/%{name}-%{version}
 
 %description
 The Python Desktop Server is a combined Weblog authoring tool, XMLRPC/SOAP
@@ -33,11 +39,11 @@ To setup your portal, run pyds-start, then browse http://localhost:4334.
 %setup -q -n PyDS-%version
 
 %install
-rm -rf $RPM_BUILD_ROOT
-python setup.py install --prefix=$RPM_BUILD_ROOT/usr
+rm -rf %{buildroot}
+python setup.py install --prefix=%{buildroot}/usr
 
 %clean
-rm -rf $RPM_BUILD_ROOT
+rm -rf %{buildroot}
 
 %files
 %defattr(-,root,root)
