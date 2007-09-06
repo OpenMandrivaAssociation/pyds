@@ -1,6 +1,6 @@
 %define name	pyds
 %define version 0.7.3
-%define release %mkrel 4
+%define release %mkrel 5
 
 Name: 	 	%{name}
 Summary: 	Python Desktop Server
@@ -20,7 +20,7 @@ Requires:	python-imaging
 Requires:	metakit-python
 Requires:	PyXML
 Requires:	python-soap >= 0.11.1
-Requires:	libjpeg62
+Requires:	libjpeg
 Requires:	zlib1
 Provides:	PyDS
 BuildRoot:	%{_tmppath}/%{name}-%{version}
