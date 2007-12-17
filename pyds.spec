@@ -23,7 +23,6 @@ Requires:	python-soap >= 0.11.1
 Requires:	libjpeg
 Requires:	zlib1
 Provides:	PyDS
-BuildRoot:	%{_tmppath}/%{name}-%{version}
 
 %description
 The Python Desktop Server is a combined Weblog authoring tool, XMLRPC/SOAP
