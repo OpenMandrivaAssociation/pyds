@@ -1,6 +1,6 @@
 %define name	pyds
 %define version 0.7.3
-%define release %mkrel 7
+%define release %mkrel 8
 
 Name: 	 	%{name}
 Summary: 	Python Desktop Server
