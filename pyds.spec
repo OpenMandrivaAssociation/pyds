@@ -20,7 +20,7 @@ Requires:	python-imaging
 Requires:	metakit-python
 Requires:	PyXML
 Requires:	python-soap >= 0.11.1
-Requires:	libjpeg
+Requires:	libjpeg8
 Requires:	zlib1
 Provides:	PyDS
 BuildRoot:	%{_tmppath}/%{name}-%{version}
