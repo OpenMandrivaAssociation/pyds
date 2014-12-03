@@ -1,24 +1,19 @@
-%define name	pyds
-%define version 0.7.3
-%define release %mkrel 10
-
-Name: 	 	%{name}
+Name: 	 	pyds
 Summary: 	Python Desktop Server
-Version: 	%{version}
-Release: 	%{release}
+Version: 	0.7.3
+Release: 	11
 
 Source0:	PyDS-%{version}.tar.bz2
 URL:		http://pyds.muensterland.org/
 License:	BSD
 Group:		System/Servers
-BuildRequires:	python-devel
+BuildRequires:	pkgconfig(python2)
 Requires:	python-medusa
 Requires:	python-cheetah
 Requires:	python-pyrex
 Requires:	python-docutils
 Requires:	python-imaging
 Requires:	metakit-python
-Requires:	PyXML
 Requires:	python-soap >= 0.11.1
 Requires:	zlib
 Provides:	PyDS
@@ -37,7 +32,7 @@ To setup your portal, run pyds-start, then browse http://localhost:4334.
 %setup -q -n PyDS-%version
 
 %install
-python setup.py install --prefix=%{buildroot}/usr
+python2 setup.py install --prefix=%{buildroot}/usr
 
 %files
 %doc ChangeLog LICENSE OVERVIEW README 
