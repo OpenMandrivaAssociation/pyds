@@ -1,11 +1,7 @@
-%define name	pyds
-%define version 0.7.3
-%define release %mkrel 10
-
-Name: 	 	%{name}
+Name: 	 	pyds
 Summary: 	Python Desktop Server
-Version: 	%{version}
-Release: 	%{release}
+Version: 	0.7.3
+Release: 	10.1
 
 Source0:	PyDS-%{version}.tar.bz2
 URL:		http://pyds.muensterland.org/
@@ -18,7 +14,6 @@ Requires:	python-pyrex
 Requires:	python-docutils
 Requires:	python-imaging
 Requires:	metakit-python
-Requires:	PyXML
 Requires:	python-soap >= 0.11.1
 Requires:	zlib
 Provides:	PyDS
