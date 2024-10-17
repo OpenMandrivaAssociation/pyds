@@ -4,7 +4,7 @@ Version: 	0.7.3
 Release: 	12
 
 Source0:	PyDS-%{version}.tar.bz2
-URL:		http://pyds.muensterland.org/
+URL:		https://pyds.muensterland.org/
 License:	BSD
 Group:		System/Servers
 BuildRequires:	pkgconfig(python2)
